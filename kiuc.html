@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/kiuc.css">
+
+    <title>Title</title>
+</head>
+
+<body>
+    <!-- Nhạc nền -->
+    <audio id="bgMusic" src="./music/love.mp3" loop></audio>
+
+    <section class="memory-section">
+        <h1 class="title">💞 Ký Ức Của Tụi Mình</h1>
+
+        <div class="timeline">
+
+            <div class="line"></div>
+
+            <div class="memory-item hidden"
+                data-message="Giây phút nhìn thấy bức ảnh này anh rất vui vì anh thấy món quà anh tặng được em nâng niu 💖">
+                <img style="z-index: 1;" src="./images/qua1.jpg" alt="">
+                <div class="text">
+                    <h3>📅 Ngày mình gặp nhau</h3>
+                    <p>Đây là món quà đầu tiên anh tặng em.</p>
+                </div>
+            </div>
+
+            <div class="memory-item hidden" data-message="Hôm này tôi được ở bên em lâu nhất trong thời gian qua😆">
+                <img style="z-index: 1;" src="./images/memory2.jpg" alt="">
+                <div class="text">
+                    <h3>🌸 Lần đầu được đi ăn cùng em</h3>
+                    <p>Đây là lần đầu tiên anh ăn món này.</p>
+                </div>
+            </div>
+            <div class="memory-item hidden" data-message="Đây là lúc công chúa chuẩn bị chúc mừng năm mới mình 💖">
+                <img style="z-index: 1;" src="./images/memory3.jpg" alt="">
+                <div class="text">
+                    <h3>📅 Đón tết dương cùng công chúa</h3>
+                    <p>Cuteee quá.</p>
+                </div>
+            </div>
+            <div class="memory-item hidden" data-message="Hôm này công chúa lộng lẫy, xinh đẹp lắm luôn ❤️">
+                <img style="z-index: 1;" src="./images/memory4.jpg" alt="">
+                <div class="text">
+                    <h3>💖 Công chúa dẫn đi ăn</h3>
+                    <p>Lần thứ 2 được ăn cùng công chúa nè.</p>
+                </div>
+            </div>
+            <div class="memory-item hidden" data-message="Hôm này công chúa lộng lẫy, xinh đẹp lắm luôn ❤️">
+
+                <div class="text" style="z-index: 1; background-color: white;">
+                    <h3>Để mà viết ra thì còn nhiều kỉ niệm, ảnh lắm</h3>
+                    <p>Để dịp khác nha công chúaaa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <button style="display: flex; justify-content: center; width: 100%;" class="btn" id="nextBtn"
+        onclick="goToScreen2()">Tiếp
+        tục nhé ❤️</button>
+
+    <!-- Popup lời nhắn -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <p id="popupText"></p>
+            <button onclick="closePopup()">Đóng 💕</button>
+        </div>
+    </div>
+
+    <script src="./js/kiuc.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

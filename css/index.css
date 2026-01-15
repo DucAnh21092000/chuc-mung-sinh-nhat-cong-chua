@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&family=Quicksand&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom, #fde2ea, #fff7f9);
+  background-size: cover;
+  font-family: "Quicksand", sans-serif;
+  overflow: hidden;
+}
+
+/* Màn hình chính */
+.screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Chữ typing */
+.typing {
+  font-family: "Great Vibes", cursive;
+  font-size: 46px;
+  color: #e88aa3;
+  max-width: 800px;
+  line-height: 1.4;
+  text-shadow: 0 2px 10px rgba(232, 138, 163, 0.5);
+}
+
+/* Cursor nhấp nháy */
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 40px;
+  background: #e88aa3;
+  margin-left: 6px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+/* Nút công chúa */
+.btn {
+  margin-top: 50px;
+  background: linear-gradient(135deg, #f8b6c8, #e88aa3);
+  color: white;
+  border-radius: 30px;
+  padding: 14px 36px;
+  font-size: 21px;
+  border: none;
+  box-shadow: 0 10px 25px rgba(232, 138, 163, 0.4);
+  transition: all 0.3s ease;
+  display: none;
+  font-family: "Great Vibes", cursive;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+}
+
+.floating {
+  position: fixed;
+  bottom: -20px;
+  font-size: 20px;
+  opacity: 0.8;
+  animation: floatUp 6s linear forwards;
+  pointer-events: none;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh) scale(1.4);
+    opacity: 0;
+  }
+}
+
+/* Fade + zoom khi chuyển màn */
+.fade-out {
+  animation: fadeZoom 1s forwards;
+}
+
+@keyframes fadeZoom {
+  to {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+}
