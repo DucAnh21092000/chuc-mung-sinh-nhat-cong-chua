@@ -38,6 +38,5 @@ window.addEventListener('click', () => {
 }, { once: true });
 
 function goToScreen2() {
-    console.log(123);
-    window.location.href = `${location.origin}/chuc-mung-sinh-nhat/chucmung.html`
+    window.location.href = `${location.origin}/chuc-mung-sinh-nhat-cong-chua/chucmung.html`
 };
