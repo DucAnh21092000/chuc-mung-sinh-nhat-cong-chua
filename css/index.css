@@ -110,3 +110,51 @@ body {
     transform: scale(1.1);
   }
 }
+
+.music-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.music-popup {
+  background: white;
+  padding: 28px 36px;
+  border-radius: 18px;
+  text-align: center;
+  animation: zoomFade 0.6s ease;
+}
+
+.music-popup p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.music-popup button {
+  padding: 10px 26px;
+  border: none;
+  border-radius: 20px;
+  background: #ff5fa2;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.music-popup button:hover {
+  background: #ff78b7;
+}
+
+@keyframes zoomFade {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

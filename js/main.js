@@ -1,10 +1,17 @@
-const text = "Chào mừng công chúa nhỏ của anh 💖\nHôm nay là một ngày thật đặc biệt...";
+const text = "Have a nice day \nToday is a special day for you 💖\n You are so Precious for me";
 const speed = 80;
 
 let index = 0;
 const textElement = document.getElementById("text");
 const nextBtn = document.getElementById("nextBtn");
 const music = document.getElementById("bgMusic");
+
+function allowMusic() {
+    const music = document.getElementById("bgMusic");
+    music.play();
+    typeEffect();
+    document.getElementById("musicOverlay").style.display = "none";
+}
 
 
 function createFloating() {
@@ -37,7 +44,7 @@ function typeEffect() {
     }
 }
 
-typeEffect();
+
 
 /* Chuyển sang màn 2 có fade + zoom */
 function goToScreen2() {

@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Great Vibes", cursive;
+  font-size: 21px;
 }
 
 body {
@@ -49,6 +50,16 @@ body {
   gap: 30px;
   width: 100%;
   transition: all 0.8s ease;
+  background-color: #ffc0b9;
+  padding: 16px;
+  position: relative;
+}
+
+h3 {
+  position: relative;
+  z-index: 99;
+  color: #ffffc5;
+  padding: 16px;
 }
 
 .memory-item:nth-child(odd) {
@@ -60,7 +71,9 @@ body {
   width: 280px;
   border-radius: 20px;
   cursor: pointer;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
@@ -70,8 +83,17 @@ body {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
 
-.text {
+.text p {
   max-width: 350px;
+  color: #ffffc5;
+  font-size: 21px;
+}
+
+.card-cont {
+  width: 100%;
+}
+.card-cont img {
+  width: 250px;
 }
 
 .text h3 {
@@ -140,4 +162,5 @@ body {
   background: linear-gradient(135deg, #ff8a80, #ff5252);
   transform: translateY(20px);
   transition: 0.6s ease;
+  font-family: "Great Vibes", cursive;
 }
